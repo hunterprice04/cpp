@@ -38,7 +38,7 @@ int main(int argc, char **argv){
         ss.clear();
         ss.str(line);
         ss>>credit_hour>>letter_grade;
-        if(letter_grade=="NC")continue;
+        if(letter_grade=="NC"||letter_grade=="CR"||letter_grade=="S")continue;
         total_credit_hours+=credit_hour;
         total_points += credit_hour * gpa_scale[letter_grade];
     }
