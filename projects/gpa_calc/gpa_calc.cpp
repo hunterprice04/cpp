@@ -1,12 +1,12 @@
 #include <iostream>
-#include <map>
+#include <unordered_map>
 #include <sstream>
 #include <fstream>
 using namespace std;
 
 int main(int argc, char **argv){
     stringstream ss;
-    map <string, double> gpa_scale;
+    unordered_map <string, double> gpa_scale;
     string line,letter_grade,file_name;
     double credit_hour,letter_worth,total_points,total_credit_hours;
     ifstream fin;
